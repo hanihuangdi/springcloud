@@ -1,0 +1,62 @@
+2019-10-19 22:44:34.731  INFO 40248 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6aaceffd: startup date [Sat Oct 19 22:44:34 CST 2019]; root of context hierarchy
+2019-10-19 22:44:34.898  INFO 40248 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-10-19 22:44:34.925  INFO 40248 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e537a993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 22:44:35.208  INFO 40248 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-10-19 22:44:36.304  INFO 40248 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-10-19 22:44:36.306  WARN 40248 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/configservertclient/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-10-19 22:44:36.311  INFO 40248 --- [main] southwind.ConfigClientApplication        : No active profile set, falling back to default profiles: default
+2019-10-19 22:44:36.339  INFO 40248 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42530531: startup date [Sat Oct 19 22:44:36 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6aaceffd
+2019-10-19 22:44:36.832  INFO 40248 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=04a62758-2ab9-30c6-8418-218d993220d6
+2019-10-19 22:44:36.846  INFO 40248 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-10-19 22:44:36.913  INFO 40248 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e537a993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 22:44:37.212  INFO 40248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-19 22:44:37.235  INFO 40248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 22:44:37.236  INFO 40248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2019-10-19 22:44:37.240  INFO 40248 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\JDK1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\JetBrains\IntelliJ IDEA 2019.2\jbr\\bin;D:\Program Files\JetBrains\IntelliJ IDEA 2019.2\jbr\\bin\server;E:\oracle\product\10.2.0\db_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\E:\JDK1.8\bin;E:\JDK1.8\jre\bin;D:\MySQL\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\JDK1.8\bin;E:\JDK1.8\jre\bin;%CATALINA_HOME%\lib;%CATALINA_HOME%\bin;F:\maven\apache-maven-3.5.2\bin;F:\tortoiseSVN\bin;F:\Git\cmd;.]
+2019-10-19 22:44:37.353  INFO 40248 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 22:44:37.353  INFO 40248 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1015 ms
+2019-10-19 22:44:37.403  INFO 40248 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-10-19 22:44:37.407  INFO 40248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-19 22:44:37.407  INFO 40248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-19 22:44:37.408  INFO 40248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-19 22:44:37.408  INFO 40248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-19 22:44:37.440  WARN 40248 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configclientHandler': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+2019-10-19 22:44:37.440  INFO 40248 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-19 22:44:37.454  INFO 40248 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-19 22:44:37.467 ERROR 40248 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configclientHandler': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:376) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at southwind.ConfigClientApplication.main(ConfigClientApplication.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:848) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1083) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	... 17 common frames omitted
+
