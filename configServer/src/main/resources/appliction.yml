@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  appliction:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hanihuangdi/springcloud.git
+          searchPaths: config
+          username: hanihuangdi
+          password: cfdwechat123
+      lable: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
