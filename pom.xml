@@ -18,6 +18,8 @@
         <module>nativeconfigclient</module>
         <module>configServer</module>
         <module>configClient</module>
+        <module>zipkinServer</module>
+        <module>zipkinClient</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

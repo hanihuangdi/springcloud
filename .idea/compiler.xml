@@ -11,6 +11,8 @@
         <module name="feign" />
         <module name="configServer" />
         <module name="hystrix" />
+        <module name="zipkinServer" />
+        <module name="zipkinClient" />
         <module name="nativeConfig" />
         <module name="eurekaserver" />
         <module name="configClient" />
@@ -29,6 +31,8 @@
       <module name="hystrix" options="-parameters" />
       <module name="nativeConfig" options="-parameters" />
       <module name="nativeconfigclient" options="-parameters" />
+      <module name="zipkinClient" options="-parameters" />
+      <module name="zipkinServer" options="-parameters" />
     </option>
   </component>
 </project>
